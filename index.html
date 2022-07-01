@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+    <body>
+        <div class="container">
+            <header>
+                <h2 style=" padding: 12px 0;margin-bottom: 45px; text-align: center; color: white;background: rgba(0, 0, 0, 0.6);">EXAM APPLICATION</h2>
+            </header>
+            <div class="settings">
+                <h3>Settings</h3>
+                <label for="numQuestions">Number of Questions:</label>
+                <input id="numQuestions" type="number" placeholder="Enter Number OF Question...">
+                <label for="selectCategory">Select Category:</label>
+                <select name="" id="selectCategory">
+                    <option value="" hidden>Select Category:</option>
+                    <option value="21">Sports</option>
+                    <option value="23">History</option>
+                    <option value="9">General Knowledge</option>
+                </select>
+                <label for="selectDifficulty">Select Difficulty:</label>
+                <select name="" id="selectDifficulty">
+                    <option value="" hidden>Select Difficulty:</option>
+                    <option value="easy">Easy</option>
+                    <option value="medium">Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+                <input id="startExamBtn" style="cursor: pointer; color: white; font-size: large; text-transform: uppercase; background: rgba(0, 0, 0, 0.5);" type="button" value="Start Exam">
+            </div>
+            <div class="quizBody" style="display: none;">
+                <div class="question">
+                    <p class="questionBody">This is question...</p>
+                    <div class="answers">hi</div>
+                    <button id="nextButton" style="display: block; width: 100px; margin-left: auto; cursor: pointer; color: white; padding: 5px 10px; border: none; background-color: green;">NEXT</button>
+                </div>
+                <div class="questionNumbers">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                </div>
+            </div>
+            <div class="finalScreen" style="display: none;">
+            </div>
+        </div>
+        <script defer="true" src="js/main.js" type="module"></script>
+
+    </body>
+</html>
